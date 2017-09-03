@@ -2,6 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native'
 import HelloComponent from './components/HelloComponent'
 import LifecycleComponent from './components/LifecycleComponent'
+import PropsTestComponent from './components/PropsTestComponent'
+import RefTestComponent from './components/RefTestComponent'
+import FlexBoxTest from './components/FlexBoxTest'
 
 export default class App extends React.Component {
   constructor(props){
@@ -17,11 +20,11 @@ export default class App extends React.Component {
         <Text onPress={()=>{
           this.setState({
             remove:!this.state.remove
-          })}}>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automasticallyw reload.</Text>
-        <Text>Shake your phone sto open the developer menu.</Text>
+          })}}>Open up App.js to start working on your app!!</Text>
         <HelloComponent/>
         {view}
+        <PropsTestComponent name='小华'/>
+        <FlexBoxTest/>
       </View>
     );
   }
