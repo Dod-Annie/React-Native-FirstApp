@@ -21,7 +21,7 @@ export default class Home extends React.Component {
         <Text onPress={()=>{
           this.setState({
             remove:!this.state.remove
-          })}}>Open up App.js to start working on your app!!!</Text>
+          })}} style={{marginTop:20}}>Open up App.js to start working on your app!!!</Text>
         <HelloComponent/>
         {view}
         <PropsTestComponent name='小华'/>
