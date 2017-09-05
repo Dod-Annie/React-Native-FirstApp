@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Button } from 'antd-mobile'
 import { StyleSheet, Text, View, Navigator} from 'react-native'
 import HelloComponent from './HelloComponent'
 import LifecycleComponent from './LifecycleComponent'
